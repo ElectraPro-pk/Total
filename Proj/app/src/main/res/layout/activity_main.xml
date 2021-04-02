@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_gravity="center|top"
+    android:src="@drawable/logo_n"
+    />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/logo_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+
+            <br.com.sapereaude.maskedEditText.MaskedEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/cobalt"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@drawable/outline_input"
+                app:allowed_chars="1234567890"
+                android:textColorHint="@color/cobalt"
+                app:mask="+92 ### #######"
+                android:hint="33x xxxxxxx"
+                app:keep_hint="true"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Vehicle#"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/cobalt"
+                android:background="@drawable/outline_input"
+                android:inputType="text"
+                android:id="@+id/veh"
+                android:textColorHint="@color/cobalt"
+                android:layout_height="wrap_content"/>
+
+            <br.com.sapereaude.maskedEditText.MaskedEditText
+                android:id="@+id/cnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/cobalt"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/outline_input"
+                app:allowed_chars="1234567890"
+                android:textColorHint="@color/cobalt"
+                app:mask="##### ####### #"
+                android:hint="xxxxx xxxxxxxx x"
+                app:keep_hint="true"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/cobalt"
+                android:background="@drawable/outline_input"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/cobalt"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Name"
+                android:id="@+id/fname"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/cobalt"
+                android:background="@drawable/outline_input"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cobalt"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Address / Trading Area"
+                android:id="@+id/address"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/cobalt"
+                android:background="@drawable/outline_input"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/cobalt"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cobalt"
+                android:text="Product / Services"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:toggle_selectableAmount="1"
+                app:toggle_selectAnimation="vertical_slide"
+                android:textColor="@color/cobalt"
+                app:justifyContent="center"
+                app:flexWrap="wrap">
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    app:toggle_text="Excillim/HOBC" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    app:toggle_text="Hi Super" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                   app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    app:toggle_text="Diesel" />
+
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_text="Lubricants" />
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_text="Oil Change" />
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_text="Car Wash" />
+
+                <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_text="Tyre Shop"/>
+
+
+
+                 <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                    android:id="@+id/tag8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:toggle_selectedBackgroundColor="@color/theme_blue"
+                    android:layout_margin="1dp"
+                     android:padding="2dp"
+                    android:textColor="@color/cobalt"
+                    app:toggle_text="Vehicles Accessories/Car Care &amp; Special Products" />
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+       <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp"
+                    android:progressTint="@color/theme_orange"
+                    android:progressBackgroundTint="@color/theme_grey"
+                    android:stepSize="1"
+                    android:numStars="5"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"/>
+        <TextView
+        android:id="@+id/sentiment"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/theme_orange"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:background="@drawable/submi_btn"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+               android:id="@+id/subbtn"
+                android:onClick="handleClick"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
